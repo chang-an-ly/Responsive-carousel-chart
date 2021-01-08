@@ -1,0 +1,87 @@
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+}
+.banner:hover > .aut {
+  display: block;
+}
+.banner > ul:first-child {
+  list-style: none;
+  float: left;
+  position: absolute;
+  width: 6000px;
+  height: 600px;
+  font-size: 0px;
+  left: -100%;
+}
+.banner > ul:first-child > li {
+  display: inline-block;
+  width: 14%;
+  height: 600px;
+  font-size: 0px;
+}
+.banner > ul:first-child > li > a {
+  cursor: auto;
+}
+.banner > ul:first-child > li > a > img {
+  width: 100%;
+  height: 600px;
+  font-size: 0px;
+}
+.banner > ul:first-child > li:nth-child(2n) {
+  background-color: #f60;
+}
+.banner > ul:first-child > li:nth-child(3n) {
+  background-color: skyblue;
+}
+.banner > ul:last-of-type {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.banner > ul:last-of-type > li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+}
+.banner > ul:last-of-type > .actv {
+  background-color: #fff;
+}
+.banner > .aut {
+  display: block;
+  height: 100px;
+  width: 80px;
+  line-height: 80px;
+  position: absolute;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.banner > #last {
+  left: 15px;
+}
+.banner > #next {
+  right: 15px;
+}
